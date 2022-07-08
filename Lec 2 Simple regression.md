@@ -80,4 +80,45 @@ b = 100
 print(f"w: {w}")
 print(f"b: {b}")
 ```
-Then we have two functions based on x_train values, $f_{wb} = w * x[0] + b$ and $f_{wb} = w * x[1] + b$
+Then we have two functions based on x_train values, $f_{wb} = w * x[0] + b$ and $f_{wb} = w * x[1] + b$, But how to compute larger numbers of training example? **Using for loop!**
+
+```python
+def compute_model_output(x, w, b):
+    """
+    Computes the prediction of a linear model
+    Args:
+      x (ndarray (m,)): Data, m examples 
+      w,b (scalar)    : model parameters  
+    Returns
+      y (ndarray (m,)): target values
+    """
+    m = x.shape[0]
+    f_wb = np.zeros(m)
+    for i in range(m):
+        f_wb[i] = w * x[i] + b
+        
+    return f_wb
+```
+
+Now call the compute_model_output function and plot the output.
+```python
+tmp_f_wb = compute_model_output(x_train, w, b,)
+
+# Plot our model prediction
+plt.plot(x_train, tmp_f_wb, c='b',label='Our Prediction')
+
+# Plot the data points
+plt.scatter(x_train, y_train, marker='x', c='r',label='Actual Values')
+
+# Set the title
+plt.title("Housing Prices")
+# Set the y-axis label
+plt.ylabel('Price (in 1000s of dollars)')
+# Set the x-axis label
+plt.xlabel('Size (1000 sqft)')
+plt.legend()
+plt.show()
+```
+
+<img width="404" alt="Screen Shot 2022-07-08 at 5 04 10 PM" src="https://user-images.githubusercontent.com/99445916/178070094-d90580b7-6258-4b8f-9b86-cee66af45e38.png">
+
