@@ -122,3 +122,21 @@ plt.show()
 
 <img width="404" alt="Screen Shot 2022-07-08 at 5 04 10 PM" src="https://user-images.githubusercontent.com/99445916/178070094-d90580b7-6258-4b8f-9b86-cee66af45e38.png">
 
+
+We see w=100 and b=100 which do not effect our model or result in a line that fits our data.(Not a good fit) Let's adjust w=200 and b=100.
+
+```python 
+w = 200
+b = 100
+```
+
+<img width="389" alt="Screen Shot 2022-07-08 at 5 11 54 PM" src="https://user-images.githubusercontent.com/99445916/178070981-0bf3801b-2c04-4d81-a6a1-a340faacd173.png">
+
+And make a prediction by seting x = 1.2
+```python
+x_i = 1.2
+cost_1200sqft = w * x_i + b    
+
+print(f"${cost_1200sqft:.0f} thousand dollars")
+```
+
