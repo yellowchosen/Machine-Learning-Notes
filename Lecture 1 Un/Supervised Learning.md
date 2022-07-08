@@ -19,7 +19,7 @@ The explaination of google news is that the tons of news will be collected in go
 
 <img width="1067" alt="Screen Shot 2022-07-07 at 6 42 37 PM" src="https://user-images.githubusercontent.com/99445916/177883363-5e2aa744-525b-47fe-9576-55027692cae0.png">
 
-The definition of Unsupervised learning: *Data only comes with inouts X, but not output lebels Y. Algorithm has to find **stucture** in the data.*
+**The definition of Unsupervised learning:** *Data only comes with inouts X, but not output lebels Y. Algorithm has to find **stucture** in the data.*
 
 | Clustering  | Dimensionality reduction |
 | ------------- | ------------- |
