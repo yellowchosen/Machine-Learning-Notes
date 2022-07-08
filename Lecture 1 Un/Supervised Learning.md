@@ -9,7 +9,7 @@ We have two typical types(learning models). Regression and Classification.
 
 
 
-# 2。 Unsupervised learning
+# 2. Unsupervised learning
 we focused on Clustering and Non-clustering problems. The special features of Unsupervised learning are unlabeled data in training dataset, and we will not give the correct outputs and never know the outputs in advanced. Just analyzing by using the Unsupervised learning algorithm and then get the "results"(outputs).
 
 <img width="558" alt="Compare_Uns" src="https://user-images.githubusercontent.com/99445916/177882328-822b620b-a95b-4f91-9ba5-7eeafc429ae4.png">
