@@ -10,5 +10,12 @@ Notation: <br />
           *m* = number of training examples,<br />
           *(x, y)* = single training example,<br />
           ($x^i$, $y^i$) = $i^{th}$ training example ($1^{st}$, $2^{nd}$, $3^{rd}$, ...)<br />
+## 1.1 Model representation
 
+
+<img width="332" alt="Screen Shot 2022-07-07 at 9 15 46 PM" src="https://user-images.githubusercontent.com/99445916/177896993-c9815d23-315b-405f-ad80-bf2fef9c4dc8.png">
+
+*f* represents function <br />
+*y-hat* represents estimated y <br />
+Suppose input x(size) into function, and then predict output y(price). This is a mapping fucntion **X -> Y**.
 
