@@ -1,11 +1,11 @@
-# Gradient Descent
+# 1.Gradient Descent
 It is a good method to find the values of $w$ and $b$ when cost function under minimum(the smallest possible cost).
 ## The general logic of GD in linear regression
 We can randomly set up a combination of parameters, e.g. start with $$(w, b) = (0, 0)$$ or $$(w_1, w_2, ... , w_n, b) = (0, 0, ... , 0, 0)$$ and then keep changing $w, b$ to reduce $J(w, b)$ Until we settle at or near a minimum(local minimum). But we can not determine that this local minimum be equal to global minimum. Because there will be totally different results(local minimum) when we choose different start points(parameters). And imagine it is a downhill and we would like walk to the lowest position, so that every single time we just move a tiny baby little step to direction we decide and look around new direction and repeat, till we are arrived the lowest position(local minimum)!
 
 <img width="809" alt="Screen Shot 2022-07-09 at 3 42 30 PM" src="https://user-images.githubusercontent.com/99445916/178120433-dd1c8b9b-a406-4d83-87d8-fd6ffcac4c76.png">
 
-## Implementing GD algorithm
+## 1.1 Implementing GD algorithm
 **Formula:**
 
 $$ w = w - \alpha\frac{d}{dw}J(w, b)$$
@@ -21,4 +21,17 @@ Repeat these two update steps until algorithm convergence which means reaching t
 **Remember Simultaneous Update**
 
 <img width="816" alt="Screen Shot 2022-07-09 at 5 19 00 PM" src="https://user-images.githubusercontent.com/99445916/178122996-c7c66e63-b1bc-4a51-aa8c-8647fbe97448.png">
+
+## 1.2 Intuition of GD
+
+$w = w - \alpha\frac{d}{dw}J(w)$ , suppose red point is starting polsition, the slope of red point is the derivative function, and from plot we know it is positive. Based on GD fuormula, if the value of derivative function is positive, then $w = w - \alpha*(positive\  number)$, so that w is going to decreased.
+
+<img width="336" alt="Screen Shot 2022-07-09 at 5 41 00 PM" src="https://user-images.githubusercontent.com/99445916/178123553-a4f0e823-a6a4-49d7-bba6-57eed77d455d.png">
+
+On the contrary, negative slope(negative value of derivative function) will lead the increased $w$.
+
+<img width="339" alt="Screen Shot 2022-07-09 at 5 53 57 PM" src="https://user-images.githubusercontent.com/99445916/178123837-a58eab9e-9463-4620-82aa-ab92dbd4a62e.png">
+
+
+
 
