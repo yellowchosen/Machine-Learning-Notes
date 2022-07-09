@@ -19,3 +19,6 @@ $$ b = b - \alpha\frac{d}{db}J(w, b)$$
 Repeat these two update steps until algorithm convergence which means reaching the point at a local minimum where the parameters $w$ and $b$ no longer change much with each additional step that we take. 
 
 **Remember Simultaneous Update**
+
+<img width="816" alt="Screen Shot 2022-07-09 at 5 19 00 PM" src="https://user-images.githubusercontent.com/99445916/178122996-c7c66e63-b1bc-4a51-aa8c-8647fbe97448.png">
+
