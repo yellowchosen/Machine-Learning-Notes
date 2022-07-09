@@ -32,7 +32,7 @@ On the contrary, negative slope(negative value of derivative function) will lead
 
 <img width="339" alt="Screen Shot 2022-07-09 at 5 53 57 PM" src="https://user-images.githubusercontent.com/99445916/178123837-a58eab9e-9463-4620-82aa-ab92dbd4a62e.png">
 
-By the way, due to the starting point $w$ is random, if it is luckily at the minimum value(slope = 0), then the GD algorithm will do nothing! $$w = w - \alpha * 0$$
+By the way, due to the starting point $w$ is random, if it is luckily at the minimum value(slope or derivative value = 0), then the GD algorithm will do nothing! $$w = w - \alpha * 0$$
 
 
 
