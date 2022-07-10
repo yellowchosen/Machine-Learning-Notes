@@ -9,6 +9,8 @@ We can randomly set up a combination of parameters, e.g. start with $$(w, b) = (
 **Formula:**
 
 $$ w = w - \alpha\frac{d}{dw}J(w, b)$$
+$$ \frac{1}{m}\sum $$
+
 * $\alpha$ is learning rate which control how big of a step take downhill and between 0 and 1. So that if $\alpha$ is very large, then a very aggressive gradient descent procedure where trying to take "huge" steps downhill. **Remind we will learn how to choose great learning rate**.
 * Derivative term telling us in which direction we want to take our baby step.
 
