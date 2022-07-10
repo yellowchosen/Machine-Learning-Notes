@@ -54,3 +54,8 @@ Derivative functions:
 $$ \frac{d}{dw}J(w, b) = \frac{1}{m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})x^{(i)} $$
 
 $$ \frac{d}{db}J(w, b) = \frac{1}{m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)}) $$
+
+## 1.5 "Batch" gradient descent
+"Batch": Each step of gradient descent uses all the training examples.
+# 2.0 Appendix
+
