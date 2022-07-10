@@ -57,5 +57,21 @@ $$ \frac{d}{db}J(w, b) = \frac{1}{m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})
 
 ## 1.5 "Batch" gradient descent
 "Batch": Each step of gradient descent uses all the training examples.
+
 # 2.0 Appendix
+import all necessary packages
+```python
+import math, copy
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('./deeplearning.mplstyle')
+from lab_utils_uni import plt_house_x, plt_contour_wgrad, plt_divergence, plt_gradients
+```
+
+Suppose our dataset only have two observations(size of house) and two outcomes(price of house)
+```python
+# Load our data set
+x_train = np.array([1.0, 2.0])   #features
+y_train = np.array([300.0, 500.0])   #target value
+```
 
