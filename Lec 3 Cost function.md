@@ -1,4 +1,5 @@
-# Cost function- definition
+# 1. Cost function 
+## 1.1 Definition
 
 Recall simple linear regression model: $f_{w,b}(x) = wx + b$  
 **w,b**: Parameters/Coefficients/Weights
