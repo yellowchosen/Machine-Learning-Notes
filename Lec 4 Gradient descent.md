@@ -34,6 +34,12 @@ On the contrary, negative slope(negative value of derivative function) will lead
 
 By the way, due to the starting point $w$ is random, if it is luckily at the minimum value(slope or derivative value = 0), then the GD algorithm will do nothing! $$w = w - \alpha * 0$$
 
+## Learning rate
+* If $\alpha$ is too small, then gradient descents will work, but it will be slow("too tiny step")  
+* If $\alpha$ is too large, then may take a huge step going from original point("overshoot, never reach minimum" / "fao; to converge, diverge")
+
+
+<img width="313" alt="Screen Shot 2022-07-09 at 9 14 50 PM" src="https://user-images.githubusercontent.com/99445916/178127617-163d454c-6065-4a38-866d-096adb35bfb7.png">
 
 
 
