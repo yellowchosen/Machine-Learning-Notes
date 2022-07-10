@@ -1,4 +1,4 @@
-# 1.Gradient Descent
+# 1.0 Gradient Descent
 It is a good method to find the values of $w$ and $b$ when cost function under minimum(the smallest possible cost).
 ## 1.1 The general logic of GD in linear regression
 We can randomly set up a combination of parameters, e.g. start with $$(w, b) = (0, 0)$$ or $$(w_1, w_2, ... , w_n, b) = (0, 0, ... , 0, 0)$$ and then keep changing $w, b$ to reduce $J(w, b)$ Until we settle at or near a minimum(local minimum). But we can not determine that this local minimum be equal to global minimum. Because there will be totally different results(local minimum) when we choose different start points(parameters). And imagine it is a downhill and we would like walk to the lowest position, so that every single time we just move a tiny baby little step to direction we decide and look around new direction and repeat, till we are arrived the lowest position(local minimum)!
