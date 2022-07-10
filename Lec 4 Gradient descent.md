@@ -8,8 +8,7 @@ We can randomly set up a combination of parameters, e.g. start with $$(w, b) = (
 ## 1.2 Implementing GD algorithm
 **Formula:**
 
-$$ w = w - \alpha\frac{d}{dw}J(w, b)$$
-$$ \frac{1}{m}\sum $$
+$$ w = w - \alpha\frac{d}{dw}J(w, b)$$ 
 
 * $\alpha$ is learning rate which control how big of a step take downhill and between 0 and 1. So that if $\alpha$ is very large, then a very aggressive gradient descent procedure where trying to take "huge" steps downhill. **Remind we will learn how to choose great learning rate**.
 * Derivative term telling us in which direction we want to take our baby step.
@@ -46,3 +45,12 @@ By the way, due to the starting point $w$ is random, if it is luckily at the min
 
 And just recap, because the slope of $J(w)$ is always changing and actually going smaller, So that more and more nearer a local minimum, gradient descent will automatically take smaller step.*(Derivative becomes smaller, Update steps become smaller)*.
 
+Linear regression model: $$ f_{w, b}(x) = wx+b $$
+
+Cost function: $$ J(w, b) = \frac{1}{2m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})^2 $$
+
+Derivative functions:
+
+$$ \frac{d}{dw}J(w, b) = \frac{1}{m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})x^{(i)} $$
+
+$$ \frac{d}{db}J(w, b) = \frac{1}{m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)}) $$
