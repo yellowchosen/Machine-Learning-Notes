@@ -36,10 +36,11 @@ By the way, due to the starting point $w$ is random, if it is luckily at the min
 
 ## Learning rate
 * If $\alpha$ is too small, then gradient descents will work, but it will be slow("too tiny step")  
-* If $\alpha$ is too large, then may take a huge step going from original point("overshoot, never reach minimum" / "fao; to converge, diverge")
+* If $\alpha$ is too large, then may take a huge step going from original point("overshoot, never reach minimum" / "fail to converge, diverge")
 
 
 <img width="313" alt="Screen Shot 2022-07-09 at 9 14 50 PM" src="https://user-images.githubusercontent.com/99445916/178127617-163d454c-6065-4a38-866d-096adb35bfb7.png">
 
 
+And just recap, because the slope of $J(w)$ is always changing and actually going smaller, So that more and more nearer a local minimum, gradient descent will automatically take smaller step.*(Derivative becomes smaller, Update steps become smaller)*.
 
