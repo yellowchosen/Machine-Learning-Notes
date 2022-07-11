@@ -203,3 +203,18 @@ w_final, b_final, J_hist, p_hist = gradient_descent(x_train ,y_train, w_init, b_
 print(f"(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})")
 ```
 
+Remember, the successful gradient descent algorithm should have decreasing cost value by each iteration runs. And change in cost is so rapid initially, it is useful to plot the initial descent on a different scale than the final descent.  In the plots below, note the scale of cost on the axes and the iteration step.
+
+```python
+# plot cost versus iteration  
+fig, (ax1, ax2) = plt.subplots(1, 2, constrained_layout=True, figsize=(12,4))
+ax1.plot(J_hist[:100])
+ax2.plot(1000 + np.arange(len(J_hist[1000:])), J_hist[1000:])
+ax1.set_title("Cost vs. iteration(start)");  ax2.set_title("Cost vs. iteration (end)")
+ax1.set_ylabel('Cost')            ;  ax2.set_ylabel('Cost') 
+ax1.set_xlabel('iteration step')  ;  ax2.set_xlabel('iteration step') 
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/99445916/178180486-aef63080-48ea-4557-aa72-8c66c3b02591.png)
+
+
