@@ -225,7 +225,7 @@ plt_contour_wgrad(x_train, y_train, p_hist, ax)
 ![image](https://user-images.githubusercontent.com/99445916/178180994-2859c5da-5a9f-45f5-b6c3-056ab9c9bd2e.png)
 
 
-# 2.0 Critical thinking
+# 3.0 Critical thinking
 What will happen if increased learning rate$(\alpha)$
 ![image](https://user-images.githubusercontent.com/99445916/178181144-86ad54fb-9774-4e93-89ca-fbe7c9656303.png)
 ```python
