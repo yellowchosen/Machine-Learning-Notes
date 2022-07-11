@@ -217,4 +217,37 @@ plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/99445916/178180486-aef63080-48ea-4557-aa72-8c66c3b02591.png)
 
+More accurately explain, show the progress of gradient descent during its execution by plotting the cost over iterations on a contour plot of the cost(w,b).
+```python
+fig, ax = plt.subplots(1,1, figsize=(12, 6))
+plt_contour_wgrad(x_train, y_train, p_hist, ax)
+```
+![image](https://user-images.githubusercontent.com/99445916/178180994-2859c5da-5a9f-45f5-b6c3-056ab9c9bd2e.png)
 
+
+# 2.0 Critical thinking
+What will happen if increased learning rate$(\alpha)$
+![image](https://user-images.githubusercontent.com/99445916/178181144-86ad54fb-9774-4e93-89ca-fbe7c9656303.png)
+```python
+# initialize parameters
+w_init = 0
+b_init = 0
+# set alpha to a large value
+iterations = 10
+tmp_alpha = 8.0e-1
+# run gradient descent
+w_final, b_final, J_hist, p_hist = gradient_descent(x_train ,y_train, w_init, b_init, tmp_alpha, 
+                                                    iterations, compute_cost, compute_gradient)
+```
+Above, w and b are bouncing back and forth between positive and negative with the absolute value increasing with each iteration.<br>
+Further, each iteration $\frac{dJ(w, b)}{dw}$ changes sign and cost is increasing rather than decreasing. **This is a clear sign that the learning rate is too large and the solution is diverging.** Let's visualize this with a plot.
+```python
+plt_divergence(p_hist, J_hist,x_train, y_train)
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/99445916/178181212-2c49034c-caac-46ae-9233-55daca6eae76.png)
+
+
+
+Above, the left graph shows  w's progression over the first few steps of gradient descent.  𝑤  oscillates from positive to negative and cost grows rapidly. Gradient Descent is operating on both  𝑤  and  𝑏  simultaneously, so one needs the 3-D plot on the right for the complete picture.
