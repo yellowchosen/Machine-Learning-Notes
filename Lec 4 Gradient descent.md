@@ -59,7 +59,10 @@ $$ \frac{d}{db}J(w, b) = \frac{1}{m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})
 "Batch": Each step of gradient descent uses all the training examples.
 
 # 2.0 Appendix
-import all necessary packages
+
+This is the Procedure of implementing the gradient descent under linear regression. <br>
+Import all necessary packages
+
 ```python
 import math, copy
 import numpy as np
@@ -74,4 +77,25 @@ Suppose our dataset only have two observations(size of house) and two outcomes(p
 x_train = np.array([1.0, 2.0])   #features
 y_train = np.array([300.0, 500.0])   #target value
 ```
+
+Compute Cost
+```python
+#Function to calculate the cost
+def compute_cost(x, y, w, b):
+   
+    m = x.shape[0] 
+    cost = 0
+    
+    for i in range(m):
+        f_wb = w * x[i] + b
+        cost = cost + (f_wb - y[i])**2
+    total_cost = 1 / (2 * m) * cost
+
+    return total_cost
+```
+
+
+
+
+
 
