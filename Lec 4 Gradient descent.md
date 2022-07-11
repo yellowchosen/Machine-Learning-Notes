@@ -126,7 +126,13 @@ def compute_gradient(x, y, w, b):
     return dj_dw, dj_db
 ```
 
+Visulize our functions by inputing dataset
 
+```python
+plt_gradients(x_train,y_train, compute_cost, compute_gradient)
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/99445916/178178059-05757f05-0a05-43ed-aec2-b22c75c666dd.png)
 
 
 
