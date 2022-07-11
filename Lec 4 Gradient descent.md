@@ -239,7 +239,7 @@ tmp_alpha = 8.0e-1
 w_final, b_final, J_hist, p_hist = gradient_descent(x_train ,y_train, w_init, b_init, tmp_alpha, 
                                                     iterations, compute_cost, compute_gradient)
 ```
-Above, w and b are bouncing back and forth between positive and negative with the absolute value increasing with each iteration.<br>
+Above, $w$ and $b$ are bouncing back and forth between positive and negative with the absolute value increasing with each iteration.<br>
 Further, each iteration $\frac{dJ(w, b)}{dw}$ changes sign and cost is increasing rather than decreasing. **This is a clear sign that the learning rate is too large and the solution is diverging.** Let's visualize this with a plot.
 ```python
 plt_divergence(p_hist, J_hist,x_train, y_train)
@@ -250,4 +250,4 @@ plt.show()
 
 
 
-Above, the left graph shows  w's progression over the first few steps of gradient descent.  𝑤  oscillates from positive to negative and cost grows rapidly. Gradient Descent is operating on both  𝑤  and  𝑏  simultaneously, so one needs the 3-D plot on the right for the complete picture.
+Above, the left graph shows  $w$'s progression over the first few steps of gradient descent.  𝑤  oscillates from positive to negative and cost grows rapidly. Gradient Descent is operating on both $w$ and $b$ simultaneously, so one needs the 3-D plot on the right for the complete picture.
