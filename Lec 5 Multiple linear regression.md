@@ -39,4 +39,19 @@ $$
 * $x_0$: suppose $x_0^{(i)} = 1$
 
 # 2.0 Appendix
+Basic logic:
+```python
+w = np.array([1, 2, 3]) # w[0], w[1], w[2]
+b = 4
+x = np.array([10, 20, 30]) # x[0], x[1], x[2]
+```
+without vectorization:
+<img width="399" alt="Screen Shot 2022-07-11 at 10 11 01 PM" src="https://user-images.githubusercontent.com/99445916/178393533-7f3dc165-0c47-411b-9962-994fc8440bde.png">
 
+```python
+f = 0
+for j in range(0, n):
+    f = f + w[j] * x[j]
+f = f + b
+
+```
