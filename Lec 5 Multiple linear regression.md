@@ -38,4 +38,5 @@ $$
 * $x$: the features vector, we have $n+1$ dimensions features
 * $x_0$: suppose $x_0^{(i)} = 1$
 
+# 2.0 Appendix
 
