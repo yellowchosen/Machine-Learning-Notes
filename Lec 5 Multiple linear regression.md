@@ -55,7 +55,7 @@ for j in range(0, n):
 f = f + b
 ```
 
-Vectorization(the most fast way!):
+Vectorization(shorter and running faster-numpy dot fucntion using parallel hardware):
 ```python
 f = np.dot(w, x) + b
 ```
