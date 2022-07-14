@@ -54,5 +54,13 @@ print(f"b = np.mean(a): {b}")
 
 b = a**2
 print(f"b = a**2      : {b}")
+
+a = np.array([1, 2, 3, 4])
+
+# multiply a by a scalar
+b = 5 * a 
+print(f"b = 5 * a : {b}")
 ```
 
+# Vector Product
+$$ a*b = \sum_{i=0}^{n-1} a_ib_i $$
