@@ -131,7 +131,7 @@ a = np.arange(6).reshape(3, 2)   #reshape is a convenient way to create matrices
 print(f"a.shape: {a.shape}, \na= {a}")
 ```
 
-## Slicing of matrix
+## Slicing in matrix
 
 ```python
 #vector 2-D slicing operations
