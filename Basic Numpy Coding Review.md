@@ -119,3 +119,14 @@ print(f"a shape = {a.shape}, a = {a}")
 a = np.random.random_sample((1, 1))  
 print(f"a shape = {a.shape}, a = {a}") 
 ```
+Or manually specify data
+```python
+# NumPy routines which allocate memory and fill with user specified values
+a = np.array([[5], [4], [3]]);   print(f" a shape = {a.shape}, np.array: a = {a}")
+```
+3 row and 2 column
+```python
+#vector indexing operations on matrices
+a = np.arange(6).reshape(3, 2)   #reshape is a convenient way to create matrices
+print(f"a.shape: {a.shape}, \na= {a}")
+```
