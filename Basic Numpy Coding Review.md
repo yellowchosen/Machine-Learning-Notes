@@ -103,3 +103,19 @@ print(f"NumPy 1-D np.dot(b, a) = {c}, np.dot(a, b).shape = {c.shape} ")
 **I would like skip the comparision between these two methods and directly introduce my conclution!** <br>
 
 **So that vectorization provides a large speed up in this example. This is because NumPy makes better use of available data parallelism in the underlying hardware. GPU's and modern CPU's implement Single Instruction, Multiple Data (SIMD) pipelines allowing multiple operations to be issued in parallel. This is critical in Machine Learning where the data sets are often very large.**
+
+# Matrices
+
+<img width="820" alt="Screen Shot 2022-07-13 at 9 36 11 PM" src="https://user-images.githubusercontent.com/99445916/178868433-6b0b7690-192a-4c10-bd80-2d558c4dc809.png">
+
+## Creat Matrix
+```python
+a = np.zeros((1, 5))                                       
+print(f"a shape = {a.shape}, a = {a}")                     
+
+a = np.zeros((2, 1))                                                                   
+print(f"a shape = {a.shape}, a = {a}") 
+
+a = np.random.random_sample((1, 1))  
+print(f"a shape = {a.shape}, a = {a}") 
+```
