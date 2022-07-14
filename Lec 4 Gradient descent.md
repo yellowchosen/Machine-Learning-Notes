@@ -45,9 +45,9 @@ By the way, due to the starting point $w$ is random, if it is luckily at the min
 
 And just recap, because the slope of $J(w)$ is always changing and actually going smaller, So that more and more nearer a local minimum, gradient descent will automatically take smaller step.*(Derivative becomes smaller, Update steps become smaller)*.
 
-Linear regression model: $$ f_{w, b}(x) = wx+b $$
+Linear regression model: $$f_{w, b}(x) = wx + b$$
 
-Cost function: $$ J(w, b) = \frac{1}{2m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})^2 $$
+Cost function: $$J(w, b) = \frac{1}{2m}\sum_{i=1}^{m} (f_{w, b}(x^{(i)}) - y^{(i)})^2$$
 
 Derivative functions:
 
