@@ -38,8 +38,19 @@ The dataset should seem like <br>
 
 <img width="534" alt="Screen Shot 2022-07-15 at 10 40 03 PM" src="https://user-images.githubusercontent.com/99445916/179336076-196a5262-29df-43b8-838f-c69978227245.png">
 
+<img width="288" alt="Screen Shot 2022-07-15 at 10 44 27 PM" src="https://user-images.githubusercontent.com/99445916/179336284-cfd41225-386a-4999-92ff-64b7ea437343.png">
+* $x^{(i)}$ is vector containing example , $x^{(i)} = (x_0^{(i)}, x_1^{(i)}, ... , x_{n-1}^{(i)} $
+* $x_j^{(i)} is element j in example, The superscript in parenthesis indicates the example number while the subscript represents an element.
 
-
+print our inputing dataset
+```python
+# data is stored in numpy array/matrix
+print(f"X Shape: {X_train.shape}, X Type:{type(X_train)})")
+print(X_train)
+print(f"y Shape: {y_train.shape}, y Type:{type(y_train)})")
+print(y_train)
+```
+ 
 
 
 
