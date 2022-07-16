@@ -16,3 +16,31 @@ Normal equation:
 * Solve for w, b without iterations
 * But does not generalize to other learning algorithms
 * And slow when number of features is large(n > 10,000)
+
+
+# Appendix
+```python
+import copy, math
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('./deeplearning.mplstyle')
+np.set_printoptions(precision=2)  # reduced display precision on numpy arrays
+```
+Some natations we will use in this project <br>
+
+<img width="745" alt="Screen Shot 2022-07-15 at 10 35 28 PM" src="https://user-images.githubusercontent.com/99445916/179335820-4ca7105c-1c08-48e9-b845-7505aae3f96c.png">
+
+```python
+X_train = np.array([[2104, 5, 1, 45], [1416, 3, 2, 40], [852, 2, 1, 35]])
+y_train = np.array([460, 232, 178])
+```
+The dataset should seem like <br>
+
+<img width="534" alt="Screen Shot 2022-07-15 at 10 40 03 PM" src="https://user-images.githubusercontent.com/99445916/179336076-196a5262-29df-43b8-838f-c69978227245.png">
+
+
+
+
+
+
+
