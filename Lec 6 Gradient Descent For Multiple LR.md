@@ -42,7 +42,7 @@ The dataset should seem like <br>
 * $x^{(i)}$ is vector containing example , $x^{(i)} = (x_0^{(i)}, x_1^{(i)}, ... , x_{n-1}^{(i)})$ <br>
 * $x_j^{(i)}$ is element j in example, The superscript in parenthesis indicates the example number while the subscript represents an element. <br>
 
-print our inputing dataset
+**print our inputing dataset**
 ```python
 # data is stored in numpy array/matrix
 print(f"X Shape: {X_train.shape}, X Type:{type(X_train)})")
