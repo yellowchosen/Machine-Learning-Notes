@@ -26,4 +26,9 @@ $x_1 = \frac{x_1 - \mu_1}{max - min} = \frac{x_1 - \mu_1}{2000 - 300}$
 ## Z-score normalization
 
 $x_1 = \frac{x_1 - \mu_1}{\sigma_1}$
+
 <img width="684" alt="Screen Shot 2022-07-25 at 1 20 18 AM" src="https://user-images.githubusercontent.com/99445916/180703908-98978dbe-08c4-46ba-8db6-99ef842ca76a.png">
+
+## Some rules of scaling
+
+<img width="675" alt="Screen Shot 2022-07-25 at 1 25 56 AM" src="https://user-images.githubusercontent.com/99445916/180704439-b555d8cc-5c16-47a9-afbf-527a0c43f932.png">
