@@ -20,3 +20,8 @@ We usually have many methods to doing the features scaling
 
 ## Mean normalization
 $x_1 = \frac{x_1 - \mu_1}{max - min} = \frac{x_1 - \mu_1}{2000 - 300}$
+
+<img width="666" alt="Screen Shot 2022-07-24 at 11 41 17 PM" src="https://user-images.githubusercontent.com/99445916/180694602-45bba262-67ed-45ee-b901-5c18d1d41e65.png">
+
+## Z-score normalization
+
